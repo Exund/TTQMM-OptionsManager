@@ -1,0 +1,9 @@
+﻿{
+  "Id": "nuterra.optionsmanager",
+  "DisplayName": "Options Manager",
+  "Author": "Exund",
+  "Version": "1.0.0",
+  "Enable": true,
+  "AssemblyName": "Nuterra.OptionsManager.dll",
+  "EntryMethod": "Nuterra.OptionsManager.OptionsManagerMod.Load"
+}
