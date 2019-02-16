@@ -39,7 +39,7 @@ namespace Nuterra.OptionsManager
         {
             GUILayout.BeginHorizontal();
             GUILayout.FlexibleSpace();
-            scroll = GUILayout.BeginScrollView(scroll, GUILayout.MaxWidth(Screen.width/3f));
+            scroll = GUILayout.BeginScrollView(scroll, GUILayout.MaxWidth(Screen.width/2f));
             foreach (var option in options)
             {        
 				if(option.modName != current)
@@ -50,7 +50,6 @@ namespace Nuterra.OptionsManager
 				}
                 GUILayout.BeginHorizontal();
                 GUILayout.Label(option.name);
-                //GUI.SetNextControlName($"{option.modName}_${option.name}");
                 option.OnGUI();
                 GUILayout.EndHorizontal();
 				GUILayout.Space(10);
@@ -59,6 +58,8 @@ namespace Nuterra.OptionsManager
             GUILayout.FlexibleSpace();
             GUILayout.EndHorizontal();
             if (GUILayout.Button("Close")) visible = false;
+
+			if (Event.current.type == EventType.MouseDown || Event.current.type == EventType.MouseUp) Event.current.Use();
         }
     }
 }

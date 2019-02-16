@@ -25,6 +25,7 @@ namespace Nuterra.OptionsManager
 				else if (current.isMouse) changeKey = false;
 			}
 			if (GUILayout.Button("Unset", GUILayout.Width(65f))) Value = (KeyCode)(-1);
+			GUILayout.EndHorizontal();
 		}
     }
 }

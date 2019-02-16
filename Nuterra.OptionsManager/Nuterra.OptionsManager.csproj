@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Option.cs" />
     <Compile Include="OptionKey.cs" />
+    <Compile Include="OptionList.cs" />
     <Compile Include="OptionRange.cs" />
     <Compile Include="OptionsManager.cs" />
     <Compile Include="OptionsManagerMod.cs" />

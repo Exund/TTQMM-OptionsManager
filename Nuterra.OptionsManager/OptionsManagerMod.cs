@@ -1,5 +1,7 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Nuterra.OptionsManager
 {
@@ -22,15 +24,22 @@ namespace Nuterra.OptionsManager
                 Value = "Hello, World!"
             };
 
-            var opt3 = new OptionRange("Test Slider", "Manager 1",-10f,10f,0.5f)
+			var items = new List<string>() { "Somebody", "once", "told", "me" };
+			var opt5 = new OptionList<string>("Test List", "Manager 1", items, 0);
+
+			var opt3 = new OptionRange("Test Slider", "Manager 1",-10f,10f,0.7f)
             {
                 Value = 0.3f
             };
 
-            var opt4 = new OptionKey("Test Key", "Manager")
+			
+
+			var opt4 = new OptionKey("Test Key", "Manager")
             {
                 Value = KeyCode.B
             };
+
+			
         }
     }
 }
