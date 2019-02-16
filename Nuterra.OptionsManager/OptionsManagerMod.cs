@@ -14,7 +14,7 @@ namespace Nuterra.OptionsManager
             _holder.AddComponent<OptionsManager>();
             GameObject.DontDestroyOnLoad(_holder);
 
-            var opt1 = new OptionToggle("Test Toggle", "Manager")
+            /*var opt1 = new OptionToggle("Test Toggle", "Manager")
             {
                 Value = true
             };
@@ -30,16 +30,12 @@ namespace Nuterra.OptionsManager
 			var opt3 = new OptionRange("Test Slider", "Manager 1",-10f,10f,0.7f)
             {
                 Value = 0.3f
-            };
-
-			
+            };		
 
 			var opt4 = new OptionKey("Test Key", "Manager")
             {
                 Value = KeyCode.B
-            };
-
-			
+            };*/			
         }
     }
 }
