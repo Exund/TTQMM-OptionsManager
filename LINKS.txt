@@ -1,0 +1,2 @@
+https://github.com/Exund/TTQMM-OptionsManager/tree/master/Nuterra.OptionsManager/bin
+/Exund/Nuterra-UI
